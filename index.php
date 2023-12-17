@@ -21,7 +21,7 @@
 		}
 
 		// Query database for all rows in the table
-		$sql = "SELECT * FROM mytable";
+		$sql = "SELECT emp_no as id, first_name as name, email_id as email FROM employees";
 		$result = $conn->query($sql);
 
 		if ($result->num_rows > 0) {
